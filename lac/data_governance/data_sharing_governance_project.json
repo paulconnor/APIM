@@ -1,0 +1,1567 @@
+[
+  {
+    "ident": 2305,
+    "ts": "2017-10-11T04:09:29.332+00:00",
+    "exportVersion": "v4",
+    "adminSchemaVersion": "20170801",
+    "name": "nbn_data_sharing",
+    "url_name": "model",
+    "comments": "Insert comments here",
+    "status": null,
+    "is_active": true,
+    "account_ident": 1000,
+    "authprovider_ident": 1000,
+    "@metadata": {
+      "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport/2305",
+      "checksum": "A:c39a5c67c61c75b1",
+      "nonpersistent": [
+        "exportVersion",
+        "adminSchemaVersion"
+      ]
+    },
+    "Topics": [],
+    "Rules": [],
+    "ApiKeys": [
+      {
+        "ident": 3226,
+        "ts": "2017-10-11T04:09:29.342+00:00",
+        "name": "Admin key",
+        "description": "Created as part of this API. Feel free to change or delete this auth token.",
+        "apikey": "T524g4uHC29hFmba9WT8",
+        "status": "A",
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "origin": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiKeys/3226",
+          "checksum": "A:346a69ed8d13678f"
+        }
+      },
+      {
+        "ident": 3227,
+        "ts": "2017-10-11T04:09:29.343+00:00",
+        "name": "rsp1 key",
+        "description": null,
+        "apikey": "uhsolgp7CuOA8xHBGfSf",
+        "status": "A",
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "origin": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiKeys/3227",
+          "checksum": "A:76733a11623fdab0"
+        }
+      },
+      {
+        "ident": 3228,
+        "ts": "2017-10-11T04:09:29.344+00:00",
+        "name": "rsp2 key",
+        "description": null,
+        "apikey": "JkRKNeEJZ0uTwezlU48c",
+        "status": "A",
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "origin": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiKeys/3228",
+          "checksum": "A:4c2fe03b5c0a6bf7"
+        }
+      },
+      {
+        "ident": 3229,
+        "ts": "2017-10-11T04:09:29.344+00:00",
+        "name": "rsp3 key",
+        "description": null,
+        "apikey": "VxrmKKtxiQFUnHzhQ2ao",
+        "status": "A",
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "origin": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiKeys/3229",
+          "checksum": "A:a4e063852dc13927"
+        }
+      },
+      {
+        "ident": 3230,
+        "ts": "2017-10-11T04:09:29.345+00:00",
+        "name": "rsp4 key",
+        "description": null,
+        "apikey": "jJouDF907Sff4Tl8CgFP",
+        "status": "A",
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "origin": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiKeys/3230",
+          "checksum": "A:e279450bc75f3a17"
+        }
+      }
+    ],
+    "ApiVersions": [
+      {
+        "ident": 2405,
+        "ts": "2017-10-11T04:09:29.351+00:00",
+        "name": "v1",
+        "comments": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions/2405",
+          "checksum": "A:6fcab8ffbd68f5af"
+        },
+        "Resources": [
+          {
+            "ident": 2271,
+            "ts": "2017-10-11T04:09:29.36+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "collections",
+            "name": "collection_id_collections",
+            "description": null,
+            "is_collection": "N",
+            "join_condition": "\"collection_id\" = [\"collection_id\"]",
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": 2278,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": 2282,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2271",
+              "checksum": "A:c9755705b8d2227d"
+            },
+            "ResourceAttributes": []
+          },
+          {
+            "ident": 2272,
+            "ts": "2017-10-11T04:09:29.361+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "collections",
+            "name": "collection_id_collections",
+            "description": null,
+            "is_collection": "N",
+            "join_condition": "\"collection_id\" = [\"collection_id\"]",
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": 2279,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": 2281,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2272",
+              "checksum": "A:24241140ad95647b"
+            },
+            "ResourceAttributes": []
+          },
+          {
+            "ident": 2273,
+            "ts": "2017-10-11T04:09:29.362+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "consumers",
+            "name": "consumer_id_consumers",
+            "description": null,
+            "is_collection": "N",
+            "join_condition": "\"consumer_id\" = [\"consumer_id\"]",
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": 2282,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": 2282,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2273",
+              "checksum": "A:2a97fe013be422b3"
+            },
+            "ResourceAttributes": []
+          },
+          {
+            "ident": 2274,
+            "ts": "2017-10-11T04:09:29.363+00:00",
+            "resource_type_ident": 1,
+            "prefix": "data",
+            "table_name": "emp_db",
+            "name": "employee_contact",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": null,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": null,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2274",
+              "checksum": "A:71da1e2e05bdd59d"
+            },
+            "ResourceAttributes": [
+              {
+                "ident": 2381,
+                "ts": "2017-10-11T04:09:29.373+00:00",
+                "name": "employee_first_name",
+                "description": null,
+                "column_name": "Employee_First_Name",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2274,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2381",
+                  "checksum": "A:cdbfc62d2697cbf3"
+                }
+              },
+              {
+                "ident": 2382,
+                "ts": "2017-10-11T04:09:29.392+00:00",
+                "name": "employee_last_name",
+                "description": null,
+                "column_name": "Employee_LastName",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2274,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2382",
+                  "checksum": "A:9446efb5bbabf0c4"
+                }
+              },
+              {
+                "ident": 2383,
+                "ts": "2017-10-11T04:09:29.393+00:00",
+                "name": "employee_dob",
+                "description": null,
+                "column_name": "Employee_DoB",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2274,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2383",
+                  "checksum": "A:05ca9be50b4e4c9c"
+                }
+              }
+            ]
+          },
+          {
+            "ident": 2275,
+            "ts": "2017-10-11T04:09:29.394+00:00",
+            "resource_type_ident": 1,
+            "prefix": "data",
+            "table_name": "emp_db",
+            "name": "employee_data",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": null,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": null,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2275",
+              "checksum": "A:44854283cbd3528f"
+            },
+            "ResourceAttributes": [
+              {
+                "ident": 2384,
+                "ts": "2017-10-11T04:09:29.395+00:00",
+                "name": "employee_first_name",
+                "description": null,
+                "column_name": "Employee_First_Name",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2275,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2384",
+                  "checksum": "A:41423477e8d836e4"
+                }
+              },
+              {
+                "ident": 2385,
+                "ts": "2017-10-11T04:09:29.395+00:00",
+                "name": "employee_dob",
+                "description": null,
+                "column_name": "Employee_DoB",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2275,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2385",
+                  "checksum": "A:32d5f4dfe9eaae55"
+                }
+              }
+            ]
+          },
+          {
+            "ident": 2276,
+            "ts": "2017-10-11T04:09:29.396+00:00",
+            "resource_type_ident": 1,
+            "prefix": "data",
+            "table_name": "emp_db",
+            "name": "employee_full_contact",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": null,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": null,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2276",
+              "checksum": "A:635708af7cb91be8"
+            },
+            "ResourceAttributes": [
+              {
+                "ident": 2386,
+                "ts": "2017-10-11T04:09:29.397+00:00",
+                "name": "employee_first_name",
+                "description": null,
+                "column_name": "Employee_First_Name",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2276,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2386",
+                  "checksum": "A:6d054a6c4525cad7"
+                }
+              },
+              {
+                "ident": 2387,
+                "ts": "2017-10-11T04:09:29.397+00:00",
+                "name": "employee_last_name",
+                "description": null,
+                "column_name": "Employee_LastName",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2276,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2387",
+                  "checksum": "A:41d275342d5f1dd4"
+                }
+              },
+              {
+                "ident": 2388,
+                "ts": "2017-10-11T04:09:29.399+00:00",
+                "name": "employee_dob",
+                "description": null,
+                "column_name": "Employee_DoB",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2276,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2388",
+                  "checksum": "A:bd2ecdaee1e35d91"
+                }
+              },
+              {
+                "ident": 2389,
+                "ts": "2017-10-11T04:09:29.401+00:00",
+                "name": "employee_address_street",
+                "description": null,
+                "column_name": "Employee_Address_Street_Name",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2276,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2389",
+                  "checksum": "A:b3ceb2b425505463"
+                }
+              }
+            ]
+          },
+          {
+            "ident": 2277,
+            "ts": "2017-10-11T04:09:29.403+00:00",
+            "resource_type_ident": 1,
+            "prefix": "data",
+            "table_name": "emp_db",
+            "name": "employee_full_name",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": null,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": null,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2277",
+              "checksum": "A:801c50b2242e4302"
+            },
+            "ResourceAttributes": [
+              {
+                "ident": 2390,
+                "ts": "2017-10-11T04:09:29.404+00:00",
+                "name": "employee_first_name",
+                "description": null,
+                "column_name": "Employee_First_Name",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2277,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2390",
+                  "checksum": "A:52e3ade348c3c819"
+                }
+              },
+              {
+                "ident": 2391,
+                "ts": "2017-10-11T04:09:29.405+00:00",
+                "name": "employee_last_name",
+                "description": null,
+                "column_name": "Employee_LastName",
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2277,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2391",
+                  "checksum": "A:c750282464ddc5df"
+                }
+              }
+            ]
+          },
+          {
+            "ident": 2278,
+            "ts": "2017-10-11T04:09:29.408+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "report_items",
+            "name": "model_report_items_List",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": "\"report_id\" = [\"report_id\"]",
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": 2280,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": 2282,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2278",
+              "checksum": "A:82bc808db087cb47"
+            },
+            "ResourceAttributes": []
+          },
+          {
+            "ident": 2279,
+            "ts": "2017-10-11T04:09:29.41+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "report_items",
+            "name": "model_report_items_List",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": "\"report_id\" = [\"report_id\"]",
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": 2281,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": 2281,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2279",
+              "checksum": "A:a0099b41196f3a96"
+            },
+            "ResourceAttributes": []
+          },
+          {
+            "ident": 2280,
+            "ts": "2017-10-11T04:09:29.411+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "reports",
+            "name": "report_id_reports",
+            "description": null,
+            "is_collection": "N",
+            "join_condition": "\"report_id\" = [\"report_id\"]",
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": 2282,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": 2282,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2280",
+              "checksum": "A:1b0eb62071eba2b4"
+            },
+            "ResourceAttributes": []
+          },
+          {
+            "ident": 2281,
+            "ts": "2017-10-11T04:09:29.412+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "reports",
+            "name": "reports",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": null,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": null,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2281",
+              "checksum": "A:c7df623fc9d82228"
+            },
+            "ResourceAttributes": []
+          },
+          {
+            "ident": 2282,
+            "ts": "2017-10-11T04:09:29.413+00:00",
+            "resource_type_ident": 1,
+            "prefix": "model",
+            "table_name": "subscriptions",
+            "name": "subscriptions",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": null,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": null,
+            "apiversion_ident": 2405,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2282",
+              "checksum": "A:5de0187623615d7b"
+            },
+            "ResourceAttributes": []
+          }
+        ]
+      }
+    ],
+    "Applications": [
+      {
+        "ident": 2102,
+        "ts": "2017-10-11T04:09:29.433+00:00",
+        "name": "Default app",
+        "description": null,
+        "project_ident": 2305,
+        "default_language": "eng",
+        "skin_ident": null,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Applications/2102",
+          "checksum": "A:fc8c7f6677cbe7a0"
+        },
+        "ApplicationOptions": [],
+        "ApplicationSkins": [],
+        "ApplicationTableSettings": [
+          {
+            "ident": 2106,
+            "ts": "2017-10-11T04:09:29.464+00:00",
+            "table_name": "model:collections",
+            "object_type": "table",
+            "json": "{\"name\":\"model:collections\",\"alias\":\"model:collections\",\"columnFormats\":{\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"collection_id\",\"width\":66,\"$$hashKey\":\"03Z\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"width\":264,\"$$hashKey\":\"040\"},\"level\":{\"name\":\"level\",\"alias\":\"Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"level\",\"width\":264,\"$$hashKey\":\"041\"}},\"gridColumns\":{\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"collection_id\",\"width\":79.22222222222223,\"$$hashKey\":\"03Z\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"width\":316.8888888888889,\"$$hashKey\":\"040\"},\"level\":{\"name\":\"level\",\"alias\":\"Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"level\",\"width\":316.8888888888889,\"$$hashKey\":\"041\"}},\"scalarColumns\":{\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"collection_id\",\"width\":79,\"$$hashKey\":\"03Z\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"width\":316,\"$$hashKey\":\"040\"},\"level\":{\"name\":\"level\",\"alias\":\"Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"level\",\"width\":316,\"$$hashKey\":\"041\"}},\"parentSettings\":{},\"defaultTable\":\"model:collections\",\"windows\":[\"main\",\"child\",\"form\"],\"childrenSettings\":{\"model_collection_elements_List\":{\"name\":\"model_collection_elements_List\",\"tableName\":\"model:collection_elements\",\"alias\":\"Collection Elements\",\"displayed\":true,\"selected\":false,\"columnFormats\":{\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"collection_id\",\"width\":74.16020671834626},\"kde\":{\"name\":\"kde\",\"alias\":\"Kde\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"kde\",\"width\":425.6795865633075},\"element_id\":{\"name\":\"element_id\",\"alias\":\"Element Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"element_id\",\"width\":74.16020671834626}},\"child_table\":\"model:collection_elements\",\"downloadable\":false,\"gridColumns\":{\"kde\":{\"name\":\"kde\",\"alias\":\"Kde\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"kde\",\"width\":513.9302325581396},\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"collection_id\",\"width\":89.53488372093024},\"element_id\":{\"name\":\"element_id\",\"alias\":\"Element Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"element_id\",\"width\":89.53488372093024}},\"parentSettings\":{\"model_collections_Parent\":{\"alias\":\"model:collections\",\"child_table\":\"model:collection_elements\",\"parent_table\":\"model:collections\",\"columnFormats\":{\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"collections Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.model_collections_Parent.collection_id\",\"parentRole\":\"model_collections_Parent\"},\"name\":{\"name\":\"name\",\"alias\":\"collections Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.model_collections_Parent.name\",\"parentRole\":\"model_collections_Parent\"},\"level\":{\"name\":\"level\",\"alias\":\"collections Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.model_collections_Parent.level\",\"parentRole\":\"model_collections_Parent\"}}}},\"groups\":[],\"labelPlacement\":\"left\"}},\"groups\":[],\"labelPlacement\":\"Left\"}",
+            "app_ident": 2102,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Applications.ApplicationTableSettings/2106",
+              "checksum": "A:88011863cf9beeef"
+            }
+          },
+          {
+            "ident": 2107,
+            "ts": "2017-10-11T04:09:29.471+00:00",
+            "table_name": "model:reports",
+            "object_type": "table",
+            "json": "{\"name\":\"model:reports\",\"alias\":\"model:reports\",\"columnFormats\":{\"report_id\":{\"name\":\"report_id\",\"alias\":\"Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_id\",\"width\":142.1994382022472,\"$$hashKey\":\"0G3\"},\"report_description\":{\"name\":\"report_description\",\"alias\":\"Report Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_description\",\"width\":570.8005617977528,\"$$hashKey\":\"0G4\"}},\"gridColumns\":{\"report_id\":{\"name\":\"report_id\",\"alias\":\"Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_id\",\"width\":117.0702247191011,\"$$hashKey\":\"0G3\"},\"report_description\":{\"name\":\"report_description\",\"alias\":\"Report Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_description\",\"width\":469.92977528089887,\"$$hashKey\":\"0G4\"}},\"scalarColumns\":{\"report_id\":{\"name\":\"report_id\",\"alias\":\"Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_id\",\"width\":117,\"$$hashKey\":\"0G3\"},\"report_description\":{\"name\":\"report_description\",\"alias\":\"Report Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_description\",\"width\":469,\"$$hashKey\":\"0G4\"}},\"parentSettings\":{},\"defaultTable\":false,\"windows\":[\"main\",\"child\",\"form\"],\"childrenSettings\":{\"model_report_items_List\":{\"name\":\"model_report_items_List\",\"tableName\":\"model:report_items\",\"alias\":\"Report Items\",\"displayed\":true,\"selected\":false,\"columnFormats\":{\"report_id\":{\"name\":\"report_id\",\"alias\":\"Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_id\"},\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"collection_id\",\"width\":263.1821835231078}},\"child_table\":\"model:report_items\",\"downloadable\":false,\"gridColumns\":{\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"collection_id\",\"width\":263.1821835231078},\"collections/name\":{\"name\":\"name\",\"alias\":\"collections Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.collections.name\",\"parentRole\":\"collections\",\"width\":151.9089082384461},\"collections/level\":{\"name\":\"level\",\"alias\":\"collections Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.collections.level\",\"parentRole\":\"collections\",\"width\":151.9089082384461}},\"parentSettings\":{\"model_reports_Parent\":{\"alias\":\"model:reports\",\"child_table\":\"model:report_items\",\"parent_table\":\"model:reports\",\"columnFormats\":{\"report_id\":{\"name\":\"report_id\",\"alias\":\"reports Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.model_reports_Parent.report_id\",\"parentRole\":\"model_reports_Parent\"},\"report_description\":{\"name\":\"report_description\",\"alias\":\"reports Report Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.model_reports_Parent.report_description\",\"parentRole\":\"model_reports_Parent\"}}},\"collections\":{\"name\":\"collections\",\"parent_name\":\"model:collections\",\"child_name\":\"model:report_items\",\"alias\":\"collections\",\"relationship_name\":\"70c4fe014114c64ed28a3cf21bfa503f011204b1\",\"columnFormats\":{\"collection_id\":{\"name\":\"collection_id\",\"alias\":\"collections Collection Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.collections.collection_id\",\"parentRole\":\"collections\"},\"name\":{\"name\":\"name\",\"alias\":\"collections Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.collections.name\",\"parentRole\":\"collections\",\"width\":151.9089082384461},\"level\":{\"name\":\"level\",\"alias\":\"collections Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.collections.level\",\"parentRole\":\"collections\",\"width\":151.9089082384461}}}},\"groups\":[],\"labelPlacement\":\"left\"},\"report_id_subscriptions_List\":{\"name\":\"report_id_subscriptions_List\",\"tableName\":\"model:subscriptions\",\"alias\":\"Subscriptions\",\"displayed\":true,\"selected\":false,\"columnFormats\":{\"subscription_id\":{\"name\":\"subscription_id\",\"alias\":\"Subscription Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"subscription_id\",\"width\":77},\"description\":{\"name\":\"description\",\"alias\":\"Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"description\",\"width\":308},\"consumer_id\":{\"name\":\"consumer_id\",\"alias\":\"Consumer Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"consumer_id\"},\"report_id\":{\"name\":\"report_id\",\"alias\":\"Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_id\"},\"frequency\":{\"name\":\"frequency\",\"alias\":\"Frequency\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"frequency\"},\"start_date\":{\"name\":\"start_date\",\"alias\":\"Start Date\",\"type\":\"TIMESTAMP\",\"generic_type\":\"timestamp\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"timestamp\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"start_date\"}},\"child_table\":\"model:subscriptions\",\"downloadable\":false,\"gridColumns\":{\"subscription_id\":{\"name\":\"subscription_id\",\"alias\":\"Subscription Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"subscription_id\",\"width\":77},\"description\":{\"name\":\"description\",\"alias\":\"Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"description\",\"width\":308},\"consumer_id_consumers/name\":{\"name\":\"name\",\"alias\":\"consumers Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.consumer_id_consumers.name\",\"parentRole\":\"consumer_id_consumers\",\"width\":308}},\"parentSettings\":{\"report_id_reports\":{\"alias\":\"model:reports\",\"child_table\":\"model:subscriptions\",\"parent_table\":\"model:reports\",\"columnFormats\":{\"report_id\":{\"name\":\"report_id\",\"alias\":\"reports Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.report_id_reports.report_id\",\"parentRole\":\"report_id_reports\"},\"report_description\":{\"name\":\"report_description\",\"alias\":\"reports Report Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.report_id_reports.report_description\",\"parentRole\":\"report_id_reports\"}}},\"consumer_id_consumers\":{\"alias\":\"model:consumers\",\"child_table\":\"model:subscriptions\",\"parent_table\":\"model:consumers\",\"columnFormats\":{\"consumer_id\":{\"name\":\"consumer_id\",\"alias\":\"consumers Consumer Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.consumer_id_consumers.consumer_id\",\"parentRole\":\"consumer_id_consumers\"},\"name\":{\"name\":\"name\",\"alias\":\"consumers Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.consumer_id_consumers.name\",\"parentRole\":\"consumer_id_consumers\",\"width\":308},\"classification_level\":{\"name\":\"classification_level\",\"alias\":\"consumers Classification Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.consumer_id_consumers.classification_level\",\"parentRole\":\"consumer_id_consumers\"}}}},\"groups\":[],\"labelPlacement\":\"left\"}},\"groups\":[],\"labelPlacement\":\"Left\"}",
+            "app_ident": 2102,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Applications.ApplicationTableSettings/2107",
+              "checksum": "A:1c07be1bb92e98f6"
+            }
+          },
+          {
+            "ident": 2108,
+            "ts": "2017-10-11T04:09:29.472+00:00",
+            "table_name": "model:consumers",
+            "object_type": "table",
+            "json": "{\"name\":\"model:consumers\",\"alias\":\"model:consumers\",\"columnFormats\":{\"consumer_id\":{\"name\":\"consumer_id\",\"alias\":\"Consumer Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"consumer_id\",\"width\":79.22222222222223,\"$$hashKey\":\"0XU\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"width\":316.8888888888889,\"$$hashKey\":\"0XV\"},\"classification_level\":{\"name\":\"classification_level\",\"alias\":\"Classification Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"classification_level\",\"width\":316.8888888888889,\"$$hashKey\":\"0XW\"}},\"gridColumns\":{\"consumer_id\":{\"name\":\"consumer_id\",\"alias\":\"Consumer Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"consumer_id\",\"width\":79.22222222222223,\"$$hashKey\":\"0XU\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"width\":316.8888888888889,\"$$hashKey\":\"0XV\"},\"classification_level\":{\"name\":\"classification_level\",\"alias\":\"Classification Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"classification_level\",\"width\":316.8888888888889,\"$$hashKey\":\"0XW\"}},\"scalarColumns\":{\"consumer_id\":{\"name\":\"consumer_id\",\"alias\":\"Consumer Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"consumer_id\",\"width\":79.22222222222223,\"$$hashKey\":\"0XU\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"width\":316.8888888888889,\"$$hashKey\":\"0XV\"},\"classification_level\":{\"name\":\"classification_level\",\"alias\":\"Classification Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"classification_level\",\"width\":316.8888888888889,\"$$hashKey\":\"0XW\"}},\"parentSettings\":{},\"defaultTable\":false,\"windows\":[\"main\",\"child\",\"form\"],\"childrenSettings\":{\"consumer_id_subscriptions_List\":{\"name\":\"consumer_id_subscriptions_List\",\"tableName\":\"model:subscriptions\",\"alias\":\"Subscriptions\",\"displayed\":true,\"selected\":false,\"columnFormats\":{\"subscription_id\":{\"name\":\"subscription_id\",\"alias\":\"Subscription Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"subscription_id\",\"width\":77},\"description\":{\"name\":\"description\",\"alias\":\"Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"description\",\"width\":308},\"consumer_id\":{\"name\":\"consumer_id\",\"alias\":\"Consumer Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"consumer_id\"},\"report_id\":{\"name\":\"report_id\",\"alias\":\"Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"report_id\"},\"frequency\":{\"name\":\"frequency\",\"alias\":\"Frequency\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"frequency\"},\"start_date\":{\"name\":\"start_date\",\"alias\":\"Start Date\",\"type\":\"TIMESTAMP\",\"generic_type\":\"timestamp\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"timestamp\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"start_date\"}},\"child_table\":\"model:subscriptions\",\"downloadable\":false,\"gridColumns\":{\"subscription_id\":{\"name\":\"subscription_id\",\"alias\":\"Subscription Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"subscription_id\",\"width\":77},\"description\":{\"name\":\"description\",\"alias\":\"Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"description\",\"width\":308},\"report_id_reports/report_description\":{\"name\":\"report_description\",\"alias\":\"reports Report Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.report_id_reports.report_description\",\"parentRole\":\"report_id_reports\",\"width\":308}},\"parentSettings\":{\"report_id_reports\":{\"alias\":\"model:reports\",\"child_table\":\"model:subscriptions\",\"parent_table\":\"model:reports\",\"columnFormats\":{\"report_id\":{\"name\":\"report_id\",\"alias\":\"reports Report Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.report_id_reports.report_id\",\"parentRole\":\"report_id_reports\"},\"report_description\":{\"name\":\"report_description\",\"alias\":\"reports Report Description\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.report_id_reports.report_description\",\"parentRole\":\"report_id_reports\",\"width\":308}}},\"consumer_id_consumers\":{\"alias\":\"model:consumers\",\"child_table\":\"model:subscriptions\",\"parent_table\":\"model:consumers\",\"columnFormats\":{\"consumer_id\":{\"name\":\"consumer_id\",\"alias\":\"consumers Consumer Id\",\"type\":\"INTEGER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.consumer_id_consumers.consumer_id\",\"parentRole\":\"consumer_id_consumers\"},\"name\":{\"name\":\"name\",\"alias\":\"consumers Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.consumer_id_consumers.name\",\"parentRole\":\"consumer_id_consumers\"},\"classification_level\":{\"name\":\"classification_level\",\"alias\":\"consumers Classification Level\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"__internal.parentRows.consumer_id_consumers.classification_level\",\"parentRole\":\"consumer_id_consumers\"}}}},\"groups\":[],\"labelPlacement\":\"left\",\"$$hashKey\":\"10X\"}},\"groups\":[],\"labelPlacement\":\"Left\"}",
+            "app_ident": 2102,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Applications.ApplicationTableSettings/2108",
+              "checksum": "A:2916008f1c9df09d"
+            }
+          }
+        ]
+      }
+    ],
+    "Connections": [],
+    "DbaseSchemas": [
+      {
+        "ident": 2308,
+        "name": "Database:nbn_data",
+        "comments": null,
+        "url": "jdbc:mysql://localhost:3306/nbn_data",
+        "catalog_name": "nbn_data",
+        "schema_name": null,
+        "user_name": "admin",
+        "password": null,
+        "salt": null,
+        "active": true,
+        "status": null,
+        "dbasetype_ident": 1,
+        "prefix": "data",
+        "datasource_name": null,
+        "schema_editable": false,
+        "role_strategy": "simplicity",
+        "table_includes": null,
+        "proc_includes": null,
+        "table_excludes": null,
+        "proc_excludes": null,
+        "max_connections": 20,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.DbaseSchemas/2308",
+          "checksum": "A:ec6f9ee6898bd80f"
+        },
+        "NonPersistentAttributes": [],
+        "TableInfos": [],
+        "ViewInfos": []
+      },
+      {
+        "ident": 2309,
+        "name": "Database:nbn_model",
+        "comments": null,
+        "url": "jdbc:mysql://localhost:3306/nbn_model",
+        "catalog_name": "nbn_model",
+        "schema_name": null,
+        "user_name": "admin",
+        "password": null,
+        "salt": null,
+        "active": true,
+        "status": null,
+        "dbasetype_ident": 1,
+        "prefix": "model",
+        "datasource_name": null,
+        "schema_editable": false,
+        "role_strategy": "simplicity",
+        "table_includes": null,
+        "proc_includes": null,
+        "table_excludes": null,
+        "proc_excludes": null,
+        "max_connections": 20,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.DbaseSchemas/2309",
+          "checksum": "A:b6be8120a25ed50d"
+        },
+        "NonPersistentAttributes": [],
+        "TableInfos": [],
+        "ViewInfos": []
+      }
+    ],
+    "EventHandlers": [],
+    "Functions": [
+      {
+        "ident": 2013,
+        "ts": "2017-10-11T04:09:29.511+00:00",
+        "name": "fn:report",
+        "comments": "This is a skeleton function, you should most likely:\n1 - Give it a proper name (the default is a randomly generated 5-letter name)\n2 - Give it a proper comment\n3 - Change the code to do something useful",
+        "code": "var theReport = parameters.reportID;\nvar token = req.apiKey.getApiKey();\nvar settings = {sysfilter: \"equal(report_id:1)\"};\n\nvar response=[];\n\nvar parts = SysUtility.getResource(\"reports\",settings);\nfor (var i in parts) {\n    log.debug(\"DEBUG...START\");\n    log.debug(parts[i].report_description);\n    for (var j in parts[i].model_report_items_List) {\n        log.debug(parts[i].model_report_items_List[j].collection_id_collections.name);\n        log.debug(parts[i].model_report_items_List[j].collection_id_collections.level);\n        var errCaught = false ;\n        try {\n            var resource = SysUtility.restGet('http://localhost:8080/rest/default/model/v1/' + parts[i].model_report_items_List[j].collection_id_collections.name,\n                {},\n                {\n                    headers: {\n                        \"Authorization\": \"CALiveAPICreator \" + token + \":1\",\n                        \"Cache-Control\": \"no-cache\"\n                    }\n                }\n            );\n        }\n        catch(err) {\n            log.debug(\"DEBUG...ERROR>>>>>>>>>>>>>>>>......\");\n            errCaught = true;\n        }\n        if (!errCaught) { response.push(JSON.parse(resource));}\n    }\n    log.debug(\"DEBUG...END\");\n}\n\n\nreturn response;",
+        "resource_names": "",
+        "return_type": "{\n  \"description\": \"This is an example of the type of data returned by this function\"\n}\n",
+        "is_active": true,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Functions/2013",
+          "checksum": "A:2270a9f4875657b7"
+        },
+        "FunctionParameters": [
+          {
+            "ident": 2004,
+            "ts": "2017-10-11T04:09:29.545+00:00",
+            "name": "reportID",
+            "param_order": 0,
+            "comments": "Report to run",
+            "is_required": true,
+            "function_ident": 2013,
+            "type_ident": 1,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Functions.FunctionParameters/2004",
+              "checksum": "A:19c3135554269d28"
+            }
+          }
+        ]
+      }
+    ],
+    "Handlers": [
+      {
+        "ident": 2002,
+        "ts": "2017-10-12T02:25:05.742+00:00",
+        "name": "New custom endpoint",
+        "active": true,
+        "url_pattern": ".*",
+        "verbs": "GET",
+        "code": "var res = {result: 'Hello'};\nreturn JSON.stringify(res);\n",
+        "comments": null,
+        "project_ident": 2305,
+        "authenticate": false,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Handlers/2002",
+          "checksum": "A:1e2ea8074ba19b03"
+        }
+      }
+    ],
+    "Listeners": [],
+    "NamedFilters": [],
+    "NamedSorts": [],
+    "ProjectLibraries": [],
+    "ProjectOptions": [
+      {
+        "ident": 2263,
+        "ts": "2017-10-11T04:09:29.563+00:00",
+        "option_value": "https://docops.ca.com/ca-live-api-creator/3-2/en/tutorial/northwind",
+        "project_ident": 2305,
+        "projectoptiontype_ident": 13,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ProjectOptions/2263",
+          "checksum": "A:1a285adcc624f0be"
+        }
+      },
+      {
+        "ident": 2264,
+        "ts": "2017-10-11T04:09:29.574+00:00",
+        "option_value": "true",
+        "project_ident": 2305,
+        "projectoptiontype_ident": 12,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ProjectOptions/2264",
+          "checksum": "A:1075bd56b4b5d349"
+        }
+      },
+      {
+        "ident": 2265,
+        "ts": "2017-10-11T04:09:29.575+00:00",
+        "option_value": "true",
+        "project_ident": 2305,
+        "projectoptiontype_ident": 29,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ProjectOptions/2265",
+          "checksum": "A:4fb423831a0400c6"
+        }
+      }
+    ],
+    "ProjectProblems": [],
+    "Relationships": [
+      {
+        "ident": 2338,
+        "name": "624ffa06022bcaaf8ee7125e0b672558b3810ff7",
+        "parent_entity_name": "model:collections",
+        "child_entity_name": "model:collection_elements",
+        "role_to_child": "model_collection_elements_List",
+        "role_to_parent": "model_collections_Parent",
+        "parent_columns": "\"collection_id\"",
+        "child_columns": "\"collection_id\"",
+        "update_rule": "R",
+        "delete_rule": "R",
+        "key_name": null,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Relationships/2338",
+          "checksum": "A:cead8caefbf6cccc"
+        }
+      },
+      {
+        "ident": 2339,
+        "name": "a6598d471c8094e0c049452f51e742306a215a1d",
+        "parent_entity_name": "model:reports",
+        "child_entity_name": "model:report_items",
+        "role_to_child": "model_report_items_List",
+        "role_to_parent": "model_reports_Parent",
+        "parent_columns": "\"report_id\"",
+        "child_columns": "\"report_id\"",
+        "update_rule": "R",
+        "delete_rule": "R",
+        "key_name": null,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Relationships/2339",
+          "checksum": "A:bf2595fffee28622"
+        }
+      },
+      {
+        "ident": 2340,
+        "name": "70c4fe014114c64ed28a3cf21bfa503f011204b1",
+        "parent_entity_name": "model:collections",
+        "child_entity_name": "model:report_items",
+        "role_to_child": "report_items_List",
+        "role_to_parent": "collections",
+        "parent_columns": "\"collection_id\"",
+        "child_columns": "\"collection_id\"",
+        "update_rule": "R",
+        "delete_rule": "R",
+        "key_name": "collection_id",
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Relationships/2340",
+          "checksum": "A:4981193f1fe60600"
+        }
+      },
+      {
+        "ident": 2341,
+        "name": "a1929fd336f4174138431a4bef050431e4e5d13c",
+        "parent_entity_name": "model:consumers",
+        "child_entity_name": "model:subscriptions",
+        "role_to_child": "subscriptions_List",
+        "role_to_parent": "consumers",
+        "parent_columns": "\"consumer_id\"",
+        "child_columns": "\"consumer_id\"",
+        "update_rule": "R",
+        "delete_rule": "R",
+        "key_name": "consumer_id",
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Relationships/2341",
+          "checksum": "A:62834d72926c4c71"
+        }
+      },
+      {
+        "ident": 2342,
+        "name": "0976897177c25e571910d772f87af7cc18c55f1e",
+        "parent_entity_name": "model:reports",
+        "child_entity_name": "model:subscriptions",
+        "role_to_child": "subscriptions_List",
+        "role_to_parent": "reports",
+        "parent_columns": "\"report_id\"",
+        "child_columns": "\"report_id\"",
+        "update_rule": "R",
+        "delete_rule": "R",
+        "key_name": "report_id",
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Relationships/2342",
+          "checksum": "A:30c263c48aad2cab"
+        }
+      }
+    ],
+    "Roles": [
+      {
+        "ident": 2322,
+        "ts": "2017-10-11T04:09:29.603+00:00",
+        "name": "1-highly-restricted",
+        "description": null,
+        "default_table_permission": "R",
+        "default_view_permission": "N",
+        "default_apivisibility": "MF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles/2322",
+          "checksum": "A:0591b088bc4099c4"
+        },
+        "ApiKeyRoles": [
+          {
+            "ident": 3235,
+            "ts": "2017-10-11T04:09:29.612+00:00",
+            "apikey_ident": 3229,
+            "role_ident": 2322,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/3235",
+              "checksum": "A:f8eb59af927c3135"
+            }
+          }
+        ],
+        "ApiVisibility": [
+          {
+            "ident": 2004,
+            "ts": "2017-10-11T04:09:29.632+00:00",
+            "role_ident": 2322,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2451",
+            "resource_ident": 2276,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2004",
+              "checksum": "A:2c8967b19e7ad57e"
+            }
+          },
+          {
+            "ident": 2005,
+            "ts": "2017-10-11T04:09:29.639+00:00",
+            "role_ident": 2322,
+            "apitype": "TABLE",
+            "object_name": "data:emp_db",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2005",
+              "checksum": "A:04547f47e943e51b"
+            }
+          },
+          {
+            "ident": 2006,
+            "ts": "2017-10-11T04:09:29.64+00:00",
+            "role_ident": 2322,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2554",
+            "resource_ident": 2281,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2006",
+              "checksum": "A:76ed2f04d639d9a9"
+            }
+          },
+          {
+            "ident": 2007,
+            "ts": "2017-10-11T04:09:29.64+00:00",
+            "role_ident": 2322,
+            "apitype": "TABLE",
+            "object_name": "model:collections",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2007",
+              "checksum": "A:9c7e895148f993ec"
+            }
+          }
+        ],
+        "PermissionData": [],
+        "TablePermissions": [
+          {
+            "ident": 2221,
+            "ts": "2017-10-11T04:09:29.646+00:00",
+            "name": "New permission",
+            "description": null,
+            "entity_name": "data:emp_db",
+            "column_names": "Employee_First_Name,Employee_LastName,Employee_DoB,Employee_Address_Street_Name",
+            "predicate": null,
+            "access_type": "R",
+            "role_ident": 2322,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/2221",
+              "checksum": "A:9ff24e8d119f174f"
+            }
+          }
+        ]
+      },
+      {
+        "ident": 2323,
+        "ts": "2017-10-11T04:09:29.652+00:00",
+        "name": "2-restricted",
+        "description": null,
+        "default_table_permission": "R",
+        "default_view_permission": "N",
+        "default_apivisibility": "MF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles/2323",
+          "checksum": "A:a51b9a8654fb4fb8"
+        },
+        "ApiKeyRoles": [
+          {
+            "ident": 3236,
+            "ts": "2017-10-11T04:09:29.653+00:00",
+            "apikey_ident": 3228,
+            "role_ident": 2323,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/3236",
+              "checksum": "A:856bc1be345f48bf"
+            }
+          }
+        ],
+        "ApiVisibility": [
+          {
+            "ident": 2008,
+            "ts": "2017-10-11T04:09:29.653+00:00",
+            "role_ident": 2323,
+            "apitype": "TABLE",
+            "object_name": "data:emp_db",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2008",
+              "checksum": "A:4ab3842adfb448da"
+            }
+          },
+          {
+            "ident": 2009,
+            "ts": "2017-10-11T04:09:29.654+00:00",
+            "role_ident": 2323,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2450",
+            "resource_ident": 2274,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2009",
+              "checksum": "A:ce31068d06cfb3a6"
+            }
+          },
+          {
+            "ident": 2010,
+            "ts": "2017-10-11T04:09:29.655+00:00",
+            "role_ident": 2323,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2554",
+            "resource_ident": 2281,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2010",
+              "checksum": "A:adfb1cce8fd21947"
+            }
+          },
+          {
+            "ident": 2011,
+            "ts": "2017-10-11T04:09:29.655+00:00",
+            "role_ident": 2323,
+            "apitype": "TABLE",
+            "object_name": "model:collections",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2011",
+              "checksum": "A:39c160afaaef1816"
+            }
+          }
+        ],
+        "PermissionData": [],
+        "TablePermissions": [
+          {
+            "ident": 2222,
+            "ts": "2017-10-11T04:09:29.656+00:00",
+            "name": "employee_contact",
+            "description": null,
+            "entity_name": "data:emp_db",
+            "column_names": "Employee_First_Name,Employee_LastName,Employee_DoB",
+            "predicate": null,
+            "access_type": "R",
+            "role_ident": 2323,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/2222",
+              "checksum": "A:3783cee34693839c"
+            }
+          }
+        ]
+      },
+      {
+        "ident": 2324,
+        "ts": "2017-10-11T04:09:29.656+00:00",
+        "name": "3-internal",
+        "description": null,
+        "default_table_permission": "R",
+        "default_view_permission": "N",
+        "default_apivisibility": "MF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles/2324",
+          "checksum": "A:55543d76961c1efc"
+        },
+        "ApiKeyRoles": [
+          {
+            "ident": 3237,
+            "ts": "2017-10-11T04:09:29.657+00:00",
+            "apikey_ident": 3227,
+            "role_ident": 2324,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/3237",
+              "checksum": "A:03bf9b18417bf795"
+            }
+          }
+        ],
+        "ApiVisibility": [
+          {
+            "ident": 2012,
+            "ts": "2017-10-11T04:09:29.657+00:00",
+            "role_ident": 2324,
+            "apitype": "TABLE",
+            "object_name": "data:emp_db",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2012",
+              "checksum": "A:2a2047c1d78147c4"
+            }
+          },
+          {
+            "ident": 2013,
+            "ts": "2017-10-11T04:09:29.658+00:00",
+            "role_ident": 2324,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2449",
+            "resource_ident": 2275,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2013",
+              "checksum": "A:3b8f1ce673f645b3"
+            }
+          },
+          {
+            "ident": 2014,
+            "ts": "2017-10-11T04:09:29.658+00:00",
+            "role_ident": 2324,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2554",
+            "resource_ident": 2281,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2014",
+              "checksum": "A:84a1e36479352229"
+            }
+          },
+          {
+            "ident": 2015,
+            "ts": "2017-10-11T04:09:29.659+00:00",
+            "role_ident": 2324,
+            "apitype": "TABLE",
+            "object_name": "model:collections",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2015",
+              "checksum": "A:6b5795da4ce13d10"
+            }
+          }
+        ],
+        "PermissionData": [],
+        "TablePermissions": [
+          {
+            "ident": 2223,
+            "ts": "2017-10-11T04:09:29.659+00:00",
+            "name": "employee_data",
+            "description": null,
+            "entity_name": "data:emp_db",
+            "column_names": "Employee_First_Name,Employee_DoB",
+            "predicate": null,
+            "access_type": "R",
+            "role_ident": 2324,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/2223",
+              "checksum": "A:fd64c33a3991b4f5"
+            }
+          }
+        ]
+      },
+      {
+        "ident": 2325,
+        "ts": "2017-10-11T04:09:29.66+00:00",
+        "name": "4-public",
+        "description": null,
+        "default_table_permission": "R",
+        "default_view_permission": "N",
+        "default_apivisibility": "MF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles/2325",
+          "checksum": "A:e1c40b708778ca63"
+        },
+        "ApiKeyRoles": [
+          {
+            "ident": 3238,
+            "ts": "2017-10-11T04:09:29.66+00:00",
+            "apikey_ident": 3230,
+            "role_ident": 2325,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/3238",
+              "checksum": "A:36bd71dfa5aef3e3"
+            }
+          }
+        ],
+        "ApiVisibility": [
+          {
+            "ident": 2016,
+            "ts": "2017-10-11T04:09:29.661+00:00",
+            "role_ident": 2325,
+            "apitype": "TABLE",
+            "object_name": "data:emp_db",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2016",
+              "checksum": "A:694ecf8f80df2c2f"
+            }
+          },
+          {
+            "ident": 2017,
+            "ts": "2017-10-11T04:09:29.661+00:00",
+            "role_ident": 2325,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2452",
+            "resource_ident": 2277,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2017",
+              "checksum": "A:d92f9d7a54b79017"
+            }
+          },
+          {
+            "ident": 2018,
+            "ts": "2017-10-11T04:09:29.662+00:00",
+            "role_ident": 2325,
+            "apitype": "RESOURCE",
+            "object_name": "resource=2554",
+            "resource_ident": 2281,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2018",
+              "checksum": "A:690138cea095f191"
+            }
+          },
+          {
+            "ident": 2019,
+            "ts": "2017-10-11T04:09:29.662+00:00",
+            "role_ident": 2325,
+            "apitype": "TABLE",
+            "object_name": "model:collections",
+            "resource_ident": null,
+            "function_ident": null,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiVisibility/2019",
+              "checksum": "A:5eb585acd833546a"
+            }
+          }
+        ],
+        "PermissionData": [],
+        "TablePermissions": [
+          {
+            "ident": 2224,
+            "ts": "2017-10-11T04:09:29.663+00:00",
+            "name": "New permission",
+            "description": null,
+            "entity_name": "data:emp_db",
+            "column_names": "Employee_First_Name,Employee_LastName",
+            "predicate": null,
+            "access_type": "R",
+            "role_ident": 2325,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/2224",
+              "checksum": "A:c814cfe5772a7105"
+            }
+          }
+        ]
+      },
+      {
+        "ident": 2326,
+        "ts": "2017-10-11T04:09:29.664+00:00",
+        "name": "API Documentation",
+        "description": "This role is special and is used when generating OpenAPI(Swagger) documentation. It is recognized by the name special name 'API Documentation' and used only for documentation calls.\n Any Resources, Tables, Views, Procedures etc. that are defined and enabled by this role are used to generate the OpenAPI(Swagger) documentation.\n If this role is assigned to a user it will NOT be used for execution permissions.\n If this role is removed or otherwise unavailable, the Swagger/OpenAPI documentation will be nothing more that a name and version.",
+        "default_table_permission": "A",
+        "default_view_permission": "R",
+        "default_apivisibility": "TVPRMF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles/2326",
+          "checksum": "A:0b822420e6ddb25f"
+        },
+        "ApiKeyRoles": [],
+        "ApiVisibility": [],
+        "PermissionData": [],
+        "TablePermissions": []
+      },
+      {
+        "ident": 2327,
+        "ts": "2017-10-11T04:09:29.664+00:00",
+        "name": "Full access",
+        "description": "Full access to everything in this project",
+        "default_table_permission": "A",
+        "default_view_permission": "R",
+        "default_apivisibility": "TVPRMF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles/2327",
+          "checksum": "A:1ff05518e82971e0"
+        },
+        "ApiKeyRoles": [
+          {
+            "ident": 3239,
+            "ts": "2017-10-11T04:09:29.665+00:00",
+            "apikey_ident": 3226,
+            "role_ident": 2327,
+            "@metadata": {
+              "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/3239",
+              "checksum": "A:47880c8db7da8e66"
+            }
+          }
+        ],
+        "ApiVisibility": [],
+        "PermissionData": [],
+        "TablePermissions": []
+      },
+      {
+        "ident": 2328,
+        "ts": "2017-10-11T04:09:29.665+00:00",
+        "name": "Read only",
+        "description": "Read-only access to everything in this project",
+        "default_table_permission": "R",
+        "default_view_permission": "R",
+        "default_apivisibility": "TVPRMF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Roles/2328",
+          "checksum": "A:fd55ff7d00340176"
+        },
+        "ApiKeyRoles": [],
+        "ApiVisibility": [],
+        "PermissionData": [],
+        "TablePermissions": []
+      }
+    ],
+    "ScheduleItems": [
+      {
+        "ident": 2100,
+        "ts": "2017-10-11T04:16:07.455+00:00",
+        "name": "New Timer",
+        "code": "// Timer code goes here\nlog.debug(\"My timer has executed!\");\n",
+        "comments": "",
+        "is_active": false,
+        "start_time": null,
+        "end_time": null,
+        "no_overlap": false,
+        "num_servers": 0,
+        "crontab": "0 /5 * ? * * *",
+        "log_error_only": false,
+        "logging_level": 4,
+        "max_log_age": 2592000,
+        "schedule_type_ident": 2,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.ScheduleItems/2100",
+          "checksum": "A:c7b8a65ca5cda545"
+        }
+      }
+    ],
+    "Users": [
+      {
+        "ident": 2318,
+        "ts": "2017-10-11T04:09:29.68+00:00",
+        "name": "rsp1",
+        "fullname": "RSP #1",
+        "email": "paul.connor@ca.com",
+        "status": "A",
+        "roles": "3-internal,",
+        "data": null,
+        "comments": null,
+        "apikey_lifespan": 86400,
+        "password_hash": null,
+        "password_salt": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Users/2318",
+          "checksum": "A:0290180174e3c6b4"
+        }
+      },
+      {
+        "ident": 2319,
+        "ts": "2017-10-11T04:09:29.68+00:00",
+        "name": "rsp2",
+        "fullname": "RSP #2",
+        "email": "paul.connor@ca.com",
+        "status": "A",
+        "roles": "2-restricted,",
+        "data": null,
+        "comments": null,
+        "apikey_lifespan": 86400,
+        "password_hash": null,
+        "password_salt": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Users/2319",
+          "checksum": "A:940c195f8b6f44ce"
+        }
+      },
+      {
+        "ident": 2320,
+        "ts": "2017-10-11T04:09:29.681+00:00",
+        "name": "rsp3",
+        "fullname": "RSP #3",
+        "email": "new@user.com",
+        "status": "A",
+        "roles": "1-highly-restricted,",
+        "data": null,
+        "comments": null,
+        "apikey_lifespan": 86400,
+        "password_hash": null,
+        "password_salt": null,
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Users/2320",
+          "checksum": "A:bc1fda729ae41da4"
+        }
+      },
+      {
+        "ident": 2321,
+        "ts": "2017-10-11T04:09:29.681+00:00",
+        "name": "rsp4",
+        "fullname": "RSP #4",
+        "email": "paul.connor@ca.com",
+        "status": "A",
+        "roles": null,
+        "data": null,
+        "comments": null,
+        "apikey_lifespan": 86400,
+        "password_hash": "M9PTwV3+NxTq+AW7P4WaW+E88FuKeLTERKggPIfOajk7lBqa8T9Ot1rlu/58MdwI9FsTst+2I+3iz9CboUTJRw==",
+        "password_salt": "EGWUUOtQFSlbH/LMObiM4Q0jmLVKlP1QDE3zTcXF",
+        "project_ident": 2305,
+        "@metadata": {
+          "href": "http://localhost:8080/rest/abl/admin/v2/ProjectExport.Users/2321",
+          "checksum": "A:9d9070face688027"
+        }
+      }
+    ]
+  }
+]
