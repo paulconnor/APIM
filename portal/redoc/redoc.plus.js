@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * ReDoc - OpenAPI/Swagger-generated API Reference Documentation
  * -------------------------------------------------------------
  *   Version: "1.16.1"
@@ -13,9 +13,9 @@ function addElement () {
 
 
    var newdoc = document.createElement("redoc");
-   newdoc.setAttribute('spec-url', 'https://54.252.180.149:8443/swagger/veda');
+   newdoc.setAttribute('spec-url', 'https://13.229.95.102:8443/swagger/petstore');
    document.body.appendChild(newdoc);
-   Redoc.init('https://54.252.180.149:8443/swagger/veda', { scrollYOffset: 50});
+   Redoc.init('https://13.229.95.102:8443/swagger/petstore', { scrollYOffset: 50});
 
 
 }
