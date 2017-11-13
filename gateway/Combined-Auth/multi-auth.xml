@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exp:Export Version="3.0"
+    xmlns:L7p="http://www.layer7tech.com/ws/policy"
+    xmlns:exp="http://www.layer7tech.com/ws/policy/export" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <exp:References>
+        <IDProviderReference RefType="com.l7tech.console.policy.exporter.IdProviderReference">
+            <GOID>0000000000000000fffffffffffffffe</GOID>
+            <Name>Internal Identity Provider</Name>
+            <Props>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGphdmEgdmVyc2lvbj0iMS44&#xd;
+LjBfMTAyIiBjbGFzcz0iamF2YS5iZWFucy5YTUxEZWNvZGVyIj4KIDxvYmplY3QgY2xhc3M9Imph&#xd;
+dmEudXRpbC5IYXNoTWFwIj4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+YWRtaW5F&#xd;
+bmFibGVkPC9zdHJpbmc+CiAgIDxib29sZWFuPnRydWU8L2Jvb2xlYW4+CiAgPC92b2lkPgogPC9v&#xd;
+YmplY3Q+CjwvamF2YT4K</Props>
+            <TypeVal>1</TypeVal>
+        </IDProviderReference>
+        <PrivateKeyReference RefType="com.l7tech.console.policy.exporter.PrivateKeyReference">
+            <IsDefaultKey>false</IsDefaultKey>
+            <KeystoreOID>00000000000000000000000000000002</KeystoreOID>
+            <KeyAlias>jose_encryptionkey</KeyAlias>
+        </PrivateKeyReference>
+        <PrivateKeyReference RefType="com.l7tech.console.policy.exporter.PrivateKeyReference">
+            <IsDefaultKey>false</IsDefaultKey>
+            <KeystoreOID>00000000000000000000000000000002</KeystoreOID>
+            <KeyAlias>jose_signingkey</KeyAlias>
+        </PrivateKeyReference>
+    </exp:References>
+    <wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+        <wsp:All wsp:Usage="Required">
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:SslAssertion/>
+                    <L7p:HttpBasic/>
+                    <L7p:Authentication>
+                        <L7p:IdentityProviderOid goidValue="0000000000000000fffffffffffffffe"/>
+                    </L7p:Authentication>
+                    <L7p:SetVariable>
+                        <L7p:Base64Expression stringValue="ew0KICAgIm1lc3NhZ2UiIDogIkJhc2ljIEF1dGggQ3JlZGVudGlhbHMgYWNjZXB0ZWQiDQp9"/>
+                        <L7p:VariableToSet stringValue="response_message"/>
+                    </L7p:SetVariable>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="RIGHT.COMMENT"/>
+                                <L7p:value stringValue="// Basic Authentication"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:SslAssertion>
+                        <L7p:RequireClientAuthentication booleanValue="true"/>
+                    </L7p:SslAssertion>
+                    <L7p:Authentication>
+                        <L7p:IdentityProviderOid goidValue="0000000000000000fffffffffffffffe"/>
+                    </L7p:Authentication>
+                    <L7p:ValidateCertificate>
+                        <L7p:SourceVariable stringValue="request.ssl.clientCertificate"/>
+                    </L7p:ValidateCertificate>
+                    <L7p:CommentAssertion>
+                        <L7p:Comment stringValue="Now to update the header based on the Certificate"/>
+                    </L7p:CommentAssertion>
+                    <L7p:SetVariable>
+                        <L7p:Base64Expression stringValue="ew0KICAgIm1lc3NhZ2UiIDogIkNsaWVudCBDZXJ0aWZpY2F0ZXMgYWNjZXB0ZWQiDQp9"/>
+                        <L7p:VariableToSet stringValue="response_message"/>
+                    </L7p:SetVariable>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="RIGHT.COMMENT"/>
+                                <L7p:value stringValue="// Mutual Cert Authentication"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:SetVariable>
+                        <L7p:Base64Expression stringValue="JHtyZXF1ZXN0Lm1haW5wYXJ0fQ=="/>
+                        <L7p:VariableToSet stringValue="jwt_payload"/>
+                    </L7p:SetVariable>
+                    <L7p:DecodeJsonWebToken>
+                        <L7p:FailUnverifiedSignature booleanValue="true"/>
+                        <L7p:KeyAlias stringValue="jose_encryptionkey"/>
+                        <L7p:KeyGoid goidValue="00000000000000000000000000000002"/>
+                        <L7p:SourcePayload stringValue="${jwt_payload}"/>
+                        <L7p:TargetVariablePrefix stringValue="jwt"/>
+                        <L7p:ValidationType stringValue="Using Recipient Key From List"/>
+                    </L7p:DecodeJsonWebToken>
+                    <L7p:DecodeJsonWebToken>
+                        <L7p:KeyAlias stringValue="jose_signingkey"/>
+                        <L7p:KeyGoid goidValue="00000000000000000000000000000002"/>
+                        <L7p:SourcePayload stringValue="${jwt.plaintext}"/>
+                        <L7p:TargetVariablePrefix stringValue="jwt_decrypted"/>
+                        <L7p:ValidationType stringValue="Using Recipient Key From List"/>
+                    </L7p:DecodeJsonWebToken>
+                    <L7p:SetVariable>
+                        <L7p:Base64Expression stringValue="ew0KICAgImp3dF9kZWNyeXB0ZWQiIDogew0KICAgICAgImhlYWRlciI6ICR7and0X2RlY3J5cHRlZC5oZWFkZXJ9LA0KICAgICAgInBheWxvYWQiOiAke2p3dF9kZWNyeXB0ZWQucGF5bG9hZH0sDQogICAgICAic2lnbmF0dXJlIjogIiR7and0X2RlY3J5cHRlZC5zaWduYXR1cmV9IiwNCiAgICAgICJ2YWxpZCI6ICIke2p3dF9kZWNyeXB0ZWQudmFsaWR9Ig0KICAgfQ0KfQ=="/>
+                        <L7p:VariableToSet stringValue="response_message"/>
+                    </L7p:SetVariable>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="RIGHT.COMMENT"/>
+                                <L7p:value stringValue="// JWT Support"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="RIGHT.COMMENT"/>
+                            <L7p:value stringValue="// Authentication and Authorization"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:OneOrMore>
+            <wsp:All wsp:Usage="Required">
+                <L7p:RateLimit>
+                    <L7p:CounterName stringValue="PRESET(438f51ae35b76b68)${request.clientid}"/>
+                    <L7p:MaxRequestsPerSecond stringValue="1"/>
+                </L7p:RateLimit>
+                <L7p:ThroughputQuota>
+                    <L7p:CounterName stringValue="PRESET(9f96a1070b14ac7c)${request.authenticateduser.id}-${request.authenticateduser.providerid}"/>
+                    <L7p:Global booleanValue="true"/>
+                    <L7p:ReadSynchronous booleanValue="false"/>
+                    <L7p:Synchronous booleanValue="false"/>
+                    <L7p:TimeUnit intValue="3"/>
+                </L7p:ThroughputQuota>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="RIGHT.COMMENT"/>
+                            <L7p:value stringValue="// Throttling of messages"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:All>
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:Expression1 stringValue="${ssgnode.name}"/>
+                        <L7p:Expression2 stringValue="Gateway4"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="Gateway4"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="QWxsIEdvb2QuLi4KRnJvbSBQcmltYXJ5IHNpdGUgKCR7c3Nnbm9kZS5uYW1lfSkKCkN1c3RvbSBSZXNwb25zZSBDb250ZW50cyA9CgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiR7cmVzcG9uc2VfbWVzc2FnZX0KCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQo="/>
+                        <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="RIGHT.COMMENT"/>
+                                <L7p:value stringValue="// Primary Site"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:Enabled booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${ssgnode.name}"/>
+                        <L7p:Expression2 stringValue="production"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="production"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="QWxsIEdvb2QuLi4KZnJvbSBEUiBzaXRlICgke3NzZ25vZGUubmFtZX0pCg=="/>
+                        <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="RIGHT.COMMENT"/>
+                                <L7p:value stringValue="// DR Site"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="RIGHT.COMMENT"/>
+                            <L7p:value stringValue="// DR Capability Testing"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:OneOrMore>
+        </wsp:All>
+    </wsp:Policy>
+</exp:Export>
