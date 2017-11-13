@@ -2,4 +2,4 @@ This policy was created for a demo that required multiple forms of authenticatio
 
 The different forms of authentication were required as internal and external consumers were authenticated differenly.
 
-The prospect was a payment aggregator looking to support Open Banking APIs
+The prospect was looking to support Open Banking APIs
